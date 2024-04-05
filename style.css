@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  background-color:#F4F4F4;
+
+}
+.BgCircle_Img{
+    background-image:URL(HeroImages/Circles.png) ;
+    background-repeat: no-repeat;
+    background-position:  right ; 
+}
+
+.Finux_Brand{
+  font-size: 28px;
+  font-weight: 600;
+}
+.hero_Text h1{
+    font-weight: 700;
+    font-size: 46px;
+    word-spacing: 5px;
+    line-height: 35px;
+}
+.Image_X img{
+  height: 80px;
+  width: 80px ;
+}
+.hero_Text p{
+    color: #888888 ;
+    font-weight: 400;
+    font-size: 16px;
+    line-height:20px ;
+}
+.Icon_Img img{
+  height: 50px;
+  width: 50px;
+
+}
+
+ /* cards css start */
+.BitCard,
+.EtheriumCard,
+.ClarityCard,
+.BalanceCard {
+  position: relative;
+}
+
+.BitCard {
+  z-index: 3;
+  width: 22rem;
+}
+
+.EtheriumCard {
+  z-index: 4; 
+  width: 22rem;
+  left: 200px;
+  bottom: 120px;
+}
+
+.ClarityCard {
+  z-index: 3;
+  width: 22rem;
+  height: 23rem;
+  bottom: 230px;
+}
+
+.BalanceCard {
+  z-index: 4; 
+  width: 18rem;
+  bottom: 500px;
+  left: 250px;
+}
+
+@media (max-width: 767px) {
+  .BitCard,
+  .EtheriumCard,
+  .ClarityCard,
+  .BalanceCard {
+    width: calc(100% - 40px);
+    margin-bottom: 20px;
+    left: auto;
+    bottom: auto;
+  }
+
+  .BitCard {
+    z-index: 3;
+  }
+
+  .EtheriumCard {
+    left: auto;
+    z-index: 4;
+  }
+
+  .ClarityCard {
+    z-index: 3;
+  }
+
+  .BalanceCard {
+    left: auto;
+    bottom: auto;
+    z-index: 4;
+  }
+}
+/* cards end */
+  /* second section start */
+  .Vuori,
+  .Matrixian,
+  .ManScaped,
+  .Versed,
+  .Klippa{
+    position: relative;
+  } 
+  
+  .Vuori {
+    max-width: 70px;
+    top: 50px;
+  }
+  
+  .Matrixian {
+    max-width: 200px;
+    top: 90px;
+    left: 30px; 
+  }
+  
+  .ManScaped {
+    max-width: 100px;
+    top: 10px; 
+    left: 10px; 
+  }
+  
+  .Versed {
+    max-width: 150px;
+    top: 80px; 
+    left: 20px;
+  }
+  
+  .Klippa {
+    max-width: 100px;
+    top: 100px;
+    left: 10px;
+  }
+  
+  .Second_SecText{
+    position: relative; 
+     top: 100px;
+  }
+  .Second_SecText h1{
+    text-align: right;
+    font-weight: 700;
+  }
+  .Second_SecText p{
+    text-align: right;
+    color: #888888;
+  }
+  /* responsive for mobile screen */
+/* For screens smaller than 768px (sm) */
+@media (max-width: 767.98px) {
+  .Vuori {
+    max-width: 50px;
+    top: 0;
+    left: 0;
+  }
+
+  .Matrixian {
+    max-width: 150px;
+    top: 0;
+    left: 0;
+  }
+
+  .ManScaped {
+    max-width: 70px;
+    top: 0;
+    left: 0;
+  }
+
+  .Versed {
+    max-width: 100px;
+    top: 0;
+    left: 0;
+  }
+
+  .Klippa {
+    max-width: 70px;
+    top: 0;
+    left: 0;
+  }
+
+  .Second_SecText {
+    top: 0;
+    text-align: center; /* Centering text */
+  }
+}
+
+
+ /*second section end  */
+  
+ /* third section start */
+
+ .Third_Sec{
+    margin-top: 250px;
+ }
+ .Sec3_btn button{
+    position: relative;
+    border: none;
+    color: white; 
+    border-radius: 100px;
+    left: 150px;
+ }
+ .Sec3_btn button img{
+    height: 50px;
+    width: 50px;
+ }
+
+ /* slider starts */
+ .gtco-testimonials {
+  margin-top: 30px;
+  .owl-nav {
+    display: none;
+  }
+
+  .card {
+    background: #fff;
+    box-shadow: 0 8px 30px -7px #c9dff0;
+    margin: auto;
+    padding: 0 10px;
+    border-radius: 20px;
+    border: 0;
+    max-width: 350px; 
+
+    .card-img-top {
+      max-width: 100px;
+      margin: 15px auto 0;
+      box-shadow: 0 8px 20px -4px #95abbb;
+      max-width: 400px;
+      height: 200px;
+      max-width: 100%;
+    }
+
+    h5 {
+      text-align: start;
+      color: black;
+      font-size: 21px;
+      line-height: 1.3;
+
+    
+    }
+
+    p {
+      font-size: 14px;
+      color: #555;
+      text-align: start;
+    }
+  }
+
+  .active {
+    opacity: 0.5;
+    transition: all 0.3s;
+  }
+
+  .center {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  .gtco-testimonials {
+    margin-top: 20px;
+  }
+}
+
+.Slider_Btn{
+  display: flex;
+  align-items: start;
+  border-radius: 50px;
+}
+ /* slider ends */
+
+ /* third section ends */
+ .Forth_Sec {
+  margin-top: 200px;
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.Forth_Sec button {
+  color: #888888;
+  font-size: 18px;
+  font-weight: 500;
+}
+.Forth_Sec .nav-tabs .nav-link {
+  border: none;
+  outline: none; 
+}
+.Forth_Sec .nav-tabs .nav-link.active {
+    color: #FFA500; 
+}
+.Forth_Sec p {
+  font-size: 18px;
+  color: #888888;
+}
+.Forth_Sec hr {
+  color: #888888;
+}
+.Forth_Icon {
+  margin-top: 50px;
+}
+.Forth_Icon p {
+  font-size: 16px;
+  color: #888888;
+}
+ /* Forth Section ends */
+
+ /* 5th Section starts*/
+ .Fifth_Sec{
+  margin-top: 150px;
+ }
+ .Fifth_Sec .card{
+  width: 13rem;
+  height: 19rem;
+  padding: 10px 10px;
+  align-items: center;
+  border-radius: 15px;
+  text-align: center;
+ }
+ .Fith_Rside{
+  text-align: right;
+ }
+ .Fith_Rside h1{
+  font-weight: 700;
+
+ }
+ .Fith_Rside p{
+  color: #888888;
+  line-height: 35px;
+ }
+ /* 5th Section ends */
+
+ /* 6th section starts */
+ .sixth_Sec {
+  position: relative;
+  margin-top: 200px;
+}
+
+.carousel-item h1 {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.carousel-item p {
+  line-height: 35px;
+  color: #888888;
+}
+
+.sixth_Sec button{
+  border: none;
+  border-radius: 100px;
+  margin-top:230px ;
+}
+.sixth_Sec button img{
+  height: 50px;
+  width: 50px;
+}
+.sixth_Sec button.carousel-control-prev {
+  left: 0;
+}
+
+.sixth_Sec button.carousel-control-next {
+  left: 60px; 
+}
+
+.Person3_img{
+  margin-top: 50px;
+}
+@media screen and (max-width: 768px) {
+  .sixth_Sec button {
+    margin-top: 280px; 
+  }
+}
+ /* 6th Section ends */
+
+ /* 7th Section Starts */
+ .Seventh_Sec{
+  background-image: url(7SectionImages/BG.png);
+  text-align: center;
+  background-size: cover;
+  margin-top: 200px;
+ }
+ .Seventh_Sec h1{
+  margin-top: 100px;
+  font-weight: 700;
+ }
+ .Seventh_Sec p{
+  color: #888888;
+  line-height: 30px;
+  font-weight: 12px;
+  text-align: left;
+ }
+ /* 7th Section ends */
+
+ /* Footer starts */
+ .footer_Sec{
+  margin-top: 200px;
+  background-color: white;
+  text-align: center;
+  padding-top: 10px ;
+ }
+ .footer_Sec img{
+  height: 50px;
+  width: 50px;
+ }
+ /* Footer ends */
