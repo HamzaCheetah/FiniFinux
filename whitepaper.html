@@ -139,27 +139,31 @@
             <!-- tab of contents ends -->
             <div class="col-sm-12 col-md-9 Table_Content">
                 <!-- header starts -->
-                <div class="header-wrapper">
-                    <h1 class="mx-5">Finux: a market sentiment<br> data exchange utility token</h1>
-                    <ul class="nav Table-Nav flex-column">
-                        <li class="nav-item">
-                            <h4>Obsaol Tesemma </h4>
-                            <hr>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">obsaol.tesemma@fin-us.com</a>
-                            <hr>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">finulab.com|finux.xyz</a>
-                        </li>
-                    </ul>
+                <div class="row header-wrapper">
+                    <div class="col-md-8">
+                        <h2 class="mx-5 mb-5">Finux: a market sentiment<br> data exchange utility token</h2>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="nav Table-Nav flex-column">
+                            <li class="nav-item">
+                                <h4>Obsaol Tesemma </h4>
+                                <hr>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">obsaol.tesemma@fin-us.com</a>
+                                <hr>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">finulab.com|finux.xyz</a>
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
                 </div>
-                <hr>
                 <!-- header ends -->
 
                 <!-- Section-0-0 starts -->
-                <div id="section-0-0" class="my-5 ms-5">
+                <div id="section-0-0" class="my-3 ms-5">
                     <h2>0 - 0. Problem Statement </h2>
                     <p>In the stock and cryptocurrency markets, how can we monitor and track market participants’
                         outlooks and utilize those perspectives to determine price targets and action recommendations?
@@ -1207,27 +1211,84 @@
                         will be used on Finulab to identify the recommendation distribution, as well as the confidence
                         level and margin of error. Our approach will rely on the following notations:
                     </p>
-                    <img src="./whitepaperimages/Symblos (3).png" alt="symbol3" class="img-fluid">
-                    <p>To approximate the minimum required sample size for any stock or cryptocurrency, we will use the
+                    <div class="row">
+                        <div class="col-sm-8 col-md-6">
+                            <div class="bg-white Symbol_Txt mt-2">
+                                <p><span class="text-info">π<sub>b</sub> </span> | percentage of surveyed users that
+                                    recommend buy
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-md-6">
+                            <div class="bg-white  Symbol_Txt mt-2">
+                                <p><span class="text-info">π<sub>h</sub> </span> | percentage of surveyed users that
+                                    recommend hold
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-md-5">
+                            <div class="bg-white Symbol_Txt mt-2">
+                                <p><span class="text-info">π<sub>s</sub> </span>|percentage of users that
+                                    recommend sell
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-md-7">
+                            <div class="bg-white Symbol_Txt mt-2">
+                                <p><span class="text-info">z<sub>a/2</sub> </span>| z-value, i.e., z-score
+                                    associated with confidence level of 1− ∝
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-md-9">
+                            <div class="bg-white Symbol_Txt mt-2">
+                                <p><span class="text-info">m </span>| an integer such that 0<𝑚≤3; note that 3 is the
+                                        count of categories (buy, hold, or sell) </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-md-4">
+                            <div class="bg-white Symbol_Txt mt-2">
+                                <p><span class="text-info">d </span>| desired margin of error </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-8 col-md-5">
+                            <div class="bg-white Symbol_Txt mt-2">
+                                <p><span class="text-info">n </span>| count of surveyed users (i.e., sample size) </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-3">To approximate the minimum required sample size for any stock or cryptocurrency, we
+                        will
+                        use
+                        the
                         following formula[7]: 𝑛 =𝑚𝑎𝑥 [𝑧 / ∙ ]. Note that: </p>
                     <ol class="list_Font">
-                        <li>we have assumed that the population of market participants is large enough for finite
-                            correction factors to be ignored, if sampling is done without replacement, and that sample
+                        <li>we have assumed that the population of market participants is large enough for
+                            finite
+                            correction factors to be ignored, if sampling is done without replacement, and that
+                            sample
                             sizes are large enough for the normal approximation to be used. </li>
                         <li>Further, given that our objective is to approximate the recommendations distribution
-                            (percentage of market participants that recommend buy, hold, or sell), our results are
+                            (percentage of market participants that recommend buy, hold, or sell), our results
+                            are
                             applicable to all stocks or cryptocurrencies.</li>
                     </ol>
-                    <p>Leveraging the formula above, we have obtained the following results—for our comprehensive
-                        calculations, refer to the support for this white paper<span class="fw-bold text-dark"> Finux.A,
+                    <p>Leveraging the formula above, we have obtained the following results—for our
+                        comprehensive
+                        calculations, refer to the support for this white paper<span class="fw-bold text-dark">
+                            Finux.A,
                             tabs 0-1and 2-1..</span></p>
                     <div class="row">
                         <div class="col-sm-12 col-md-5">
                             <p class="mt-5"><span class="fw-bold text-dark">FIG. 7.</span> – We determined the
                                 approximate minimum
                                 sample size at a confidence level of 90%,
-                                95%, and 99%; these confidence levels were matched with a desired margin of error of 3%,
-                                2%, and 1%, respectively. Detailed above is the summary of the calculation performed at
+                                95%, and 99%; these confidence levels were matched with a desired margin of
+                                error of
+                                3%,
+                                2%, and 1%, respectively. Detailed above is the summary of the calculation
+                                performed
+                                at
                                 Finux.A, tabs 0-1 to 2-1. </p>
                         </div>
                         <div class="col-sm-12 col-md-7">
@@ -1240,7 +1301,7 @@
                                     </tr>
                                     <tr>
                                         <th scope="col">d</th>
-                                        <th scope="col">𝟏1−a ;𝜶za/2𝟐 </th>
+                                        <th scope="col">𝟏−a;za/2</th>
                                         <th scope="col">n</th>
                                     </tr>
                                 </thead>
@@ -1266,24 +1327,43 @@
                             </table>
                         </div>
                     </div>
-                    <p>Our objective in including the table above is to demonstrate that if we want to approximate
-                        market participants’ recommendation distribution such that the probability will be at least 90%
-                        that all of the estimated proportions (i.e., percentage of market participants that recommend
-                        buy, hold, or sell) will simultaneously be within 3% of the true proportion, we will need 1,119
-                        survey responses. Referring back to <span class="fw-bold text-info">FIG 4,</span> AMZN had the
+                    <p>Our objective in including the table above is to demonstrate that if we want to
+                        approximate
+                        market participants’ recommendation distribution such that the probability will be at
+                        least
+                        90%
+                        that all of the estimated proportions (i.e., percentage of market participants that
+                        recommend
+                        buy, hold, or sell) will simultaneously be within 3% of the true proportion, we will
+                        need
+                        1,119
+                        survey responses. Referring back to <span class="fw-bold text-info">FIG 4,</span> AMZN
+                        had
+                        the
                         largest count of polled analysts at
-                        53—if our objective is to find the true distribution of recommendations, at a confidence level
-                        of 90%, we can approximately expect the margin of error from a sample size of 53 to be 13%. As a
-                        byproduct, if our goal is to utilize the distribution of analysts’ recommendations to make
+                        53—if our objective is to find the true distribution of recommendations, at a confidence
+                        level
+                        of 90%, we can approximately expect the margin of error from a sample size of 53 to be
+                        13%.
+                        As a
+                        byproduct, if our goal is to utilize the distribution of analysts’ recommendations to
+                        make
                         market inferences, a sample size of 53 is not too reliable. </p>
 
                     <p>Hence, to improve the system, on Finulab we will poll users for their recommendations.
-                        Thereafter, we will display the distribution of recommendations, as well as the confidence level
+                        Thereafter, we will display the distribution of recommendations, as well as the
+                        confidence
+                        level
                         and margin of error associated with the survey, for all stocks and cryptocurrencies. To
-                        determine the margin of error, note that we will use the formula stated above. Through this
-                        approach, we believe can more accurately approximate the recommendations distribution of market
-                        participants to better inform Finulab users. Furthermore, users can assess the reliability of
-                        the polls results through our confidence level and margin of error figures for any stock or
+                        determine the margin of error, note that we will use the formula stated above. Through
+                        this
+                        approach, we believe can more accurately approximate the recommendations distribution of
+                        market
+                        participants to better inform Finulab users. Furthermore, users can assess the
+                        reliability
+                        of
+                        the polls results through our confidence level and margin of error figures for any stock
+                        or
                         cryptocurrency. </p>
                 </div>
                 <!-- Section-3-3 ends -->
@@ -1291,22 +1371,39 @@
                 <!-- Section-3-4 starts -->
                 <div id="section-3-4" class="my-5 ms-5">
                     <h2>3 - 4: Finulab – Qualitative Objective </h2>
-                    <p>The quantitative analysis of market participants’ average price targets and recommendation
-                        distributions, alongside the vast amount market data available on Finulab, can only provide a
-                        limited perspective of the market. Even if we may understand and visualize the numerical values,
-                        the underlying factors driving these figures, the “why”, may not be immediately apparent. Hence,
-                        to complement the quantitative aspects of the platform, Finulab also has social media features
-                        built-in, which allows market participants to engage in free and open critical discussions.
-                        Through the social media aspect of the platform, the quantitative segment of due diligence and
-                        market research can be adequately complemented by the qualitive analysis in order to provide
+                    <p>The quantitative analysis of market participants’ average price targets and
+                        recommendation
+                        distributions, alongside the vast amount market data available on Finulab, can only
+                        provide
+                        a
+                        limited perspective of the market. Even if we may understand and visualize the numerical
+                        values,
+                        the underlying factors driving these figures, the “why”, may not be immediately
+                        apparent.
+                        Hence,
+                        to complement the quantitative aspects of the platform, Finulab also has social media
+                        features
+                        built-in, which allows market participants to engage in free and open critical
+                        discussions.
+                        Through the social media aspect of the platform, the quantitative segment of due
+                        diligence
+                        and
+                        market research can be adequately complemented by the qualitive analysis in order to
+                        provide
                         users a more comprehensive perspective on the layout of the market.
                     </p>
-                    <p>Especially in a volatile market, it is necessary to crowd-source market participants’ insights,
-                        in real-time, to truly capture the state of the market and make a more well-informed decision.
-                        Furthermore, users’ discussions and realtime insights can clarify the average price targets and
-                        recommendation distribution data that will be available for any given stock or cryptocurrency on
+                    <p>Especially in a volatile market, it is necessary to crowd-source market participants’
+                        insights,
+                        in real-time, to truly capture the state of the market and make a more well-informed
+                        decision.
+                        Furthermore, users’ discussions and realtime insights can clarify the average price
+                        targets
+                        and
+                        recommendation distribution data that will be available for any given stock or
+                        cryptocurrency on
                         Finulab. As such, we consider users qualitative contributions just as useful as their
-                        quantitative contribution. Hence, users of the Finulab platform will also receive rewards in
+                        quantitative contribution. Hence, users of the Finulab platform will also receive
+                        rewards in
                         Finux tokens for posts, comments, and the creation of communities based on the level of
                         engagement that is received. </p>
                 </div>
@@ -1315,12 +1412,15 @@
                 <!-- Section-3-5 starts -->
                 <div id="section-3-5" class="my-5 ms-5">
                     <h2>3 - 5: Finulab – Reward Protocol </h2>
-                    <p>As mentioned previously, the only way to earn Finux tokens is to contribute and engage with
-                        Finulab. Granted that Finux has a capped maximum supply, user rewards will decrease over time.
-                        Detailed below is the table highlighting the initial baseline for each engagement type’s reward.
+                    <p>As mentioned previously, the only way to earn Finux tokens is to contribute and engage
+                        with
+                        Finulab. Granted that Finux has a capped maximum supply, user rewards will decrease over
+                        time.
+                        Detailed below is the table highlighting the initial baseline for each engagement type’s
+                        reward.
                     </p>
                     <div class="table-responsive Last-table bg-white">
-                        <table class="table mt-3 table-sm table-bordered  caption-top">
+                        <table class="table mt-2 table-sm   caption-top">
                             <caption class="text-warning fw-bold ms-3">User-Rewards Baseline </caption>
                             <thead>
                                 <tr>
@@ -1337,7 +1437,8 @@
                                 </tr>
                                 <tr>
                                     <td scope="row">Invite</td>
-                                    <td>User invites another individual, and he/she creates a Finulab account. </td>
+                                    <td>User invites another individual, and he/she creates a Finulab account.
+                                    </td>
                                     <td>10</td>
                                 </tr>
                                 <tr>
@@ -1388,35 +1489,65 @@
                             </tbody>
                         </table>
                     </div>
-                    <p class="mt-5"><span class="fw-bold text-dark">FIG. 8.</span> – Displayed above is the initial
+                    <p class="mt-5"><span class="fw-bold text-dark">FIG. 8.</span> – Displayed above is the
+                        initial
                         baseline for
                         engagement rewards on Finulab. Note that
-                        the Sign-Up and Invite rewards will remain consistent and will exist only for limited amount of
-                        time. However, every other reward type will decrease overtime as the max supply of Finux is
+                        the Sign-Up and Invite rewards will remain consistent and will exist only for limited
+                        amount
+                        of
+                        time. However, every other reward type will decrease overtime as the max supply of Finux
+                        is
                         capped. </p>
-                    <p>The Sign-Up and Invite rewards are only available for a limited amount of time to support Finulab
-                        reach a critical mass of users. Following that, those two reward types will be suspended. These
-                        two actions’ reward amounts of 5 and 10, respectively, will not be decreasing over time; they
+                    <p>The Sign-Up and Invite rewards are only available for a limited amount of time to support
+                        Finulab
+                        reach a critical mass of users. Following that, those two reward types will be
+                        suspended.
+                        These
+                        two actions’ reward amounts of 5 and 10, respectively, will not be decreasing over time;
+                        they
                         will consistently remain to be 5 and 10 until suspended. </p>
-                    <p>However, all the other rewards will continue to exist, ever after a critical mass of users has
-                        been reached. For these reward types, the amounts, as show above, are a baseline. These reward
-                        amounts will continually decrease based on the engagement gained on Finulab, as well as the
-                        remain available supply of the Finux token that has not yet been distributed to the users. On a
-                        minute-by-minute bases, these reward amounts will be divided by the total supply of Finux tokens
-                        (i.e., 150M) and then multiplied by the remaining uncirculated supply of Finux tokens (i.e.,
-                        150M subtracted by users’ earned rewards). For example, if the uncirculated supply of Finux
+                    <p>However, all the other rewards will continue to exist, ever after a critical mass of
+                        users
+                        has
+                        been reached. For these reward types, the amounts, as show above, are a baseline. These
+                        reward
+                        amounts will continually decrease based on the engagement gained on Finulab, as well as
+                        the
+                        remain available supply of the Finux token that has not yet been distributed to the
+                        users.
+                        On a
+                        minute-by-minute bases, these reward amounts will be divided by the total supply of
+                        Finux
+                        tokens
+                        (i.e., 150M) and then multiplied by the remaining uncirculated supply of Finux tokens
+                        (i.e.,
+                        150M subtracted by users’ earned rewards). For example, if the uncirculated supply of
+                        Finux
                         tokens is 109.09M, then the Price Target reward amount is: ~0.0727 (i.e., (0.1 ÷ 150M) x
-                        109.09M). Though this method of reward calculations, we ensure that the capped supply of Finux
+                        109.09M). Though this method of reward calculations, we ensure that the capped supply of
+                        Finux
                         is not exceeded. </p>
-                    <p>Furthermore, note that if the activity generated on Finulab grows fairly rapidly, it might not
+                    <p>Furthermore, note that if the activity generated on Finulab grows fairly rapidly, it
+                        might
+                        not
                         suffice to update the reward amounts on a minute-by-minute bases. If the rapid growth is
-                        consistent, it might result in all Finux tokens being distributed, which will leave future users
-                        unable to earn any. Therefore, it Finulab grows more rapidly than expected, instead of adjusting
-                        the reward amount on a minute-by-minute bases, we will adjust them at the engagement level
-                        (since engagements are what generates the rewards). At the moment, there isn’t a place where
-                        users will be able to find the current reward amounts. However, by June 30, 2024, we will also
-                        update the main Finux website (finux.xyz) to complement Finulab. At that point, the current
-                        reward amounts table, the estimated distribution forecast of the Finux token, as well as other
+                        consistent, it might result in all Finux tokens being distributed, which will leave
+                        future
+                        users
+                        unable to earn any. Therefore, it Finulab grows more rapidly than expected, instead of
+                        adjusting
+                        the reward amount on a minute-by-minute bases, we will adjust them at the engagement
+                        level
+                        (since engagements are what generates the rewards). At the moment, there isn’t a place
+                        where
+                        users will be able to find the current reward amounts. However, by June 30, 2024, we
+                        will
+                        also
+                        update the main Finux website (finux.xyz) to complement Finulab. At that point, the
+                        current
+                        reward amounts table, the estimated distribution forecast of the Finux token, as well as
+                        other
                         supply data, will be on that site and available to all. </p>
                 </div>
                 <!-- Section-3-5 ends -->
@@ -1424,12 +1555,17 @@
                 <!-- Section-4-1 starts -->
                 <div id="section-4-1" class="my-5 ms-5">
                     <h2>4 - 1 – Conclusion </h2>
-                    <p>Our objective in the creation of Finulab is to ensure that the general public is informed as
-                        accurately as possible on the current state of the market in both sentiment and hard financial
-                        data. Sentiment is unfortunately often disregarded; John Maynard Keynes is often quotes as
+                    <p>Our objective in the creation of Finulab is to ensure that the general public is informed
+                        as
+                        accurately as possible on the current state of the market in both sentiment and hard
+                        financial
+                        data. Sentiment is unfortunately often disregarded; John Maynard Keynes is often quotes
+                        as
                         saying: “Markets can remain irrational longer than you can remain solvent.” The supposed
-                        irrationality of the markets is a byproduct of the market participants’ sentiments. The better
-                        we can understand it, the better our investment decision become. Furter, the only way we can
+                        irrationality of the markets is a byproduct of the market participants’ sentiments. The
+                        better
+                        we can understand it, the better our investment decision become. Furter, the only way we
+                        can
                         understand it is by giving market participants’ a platform full dedicated to them.
                     </p>
                 </div>
@@ -1442,21 +1578,26 @@
                             <p class="fw-bold text-dark">[1]. Cable News Network. (n.d.). AAPL.
                                 CNNMoney.</p>
                             <a>https://money.cnn.com/quote/<br>forecast/forecast.html?symb=AAPL </a>
-                            <p class="fw-bold text-dark mt-5">[3]. Cable News Network. (n.d.). GOOG. CNNMoney. </p>
+                            <p class="fw-bold text-dark mt-5">[3]. Cable News Network. (n.d.). GOOG. CNNMoney.
+                            </p>
                             <a>https://money.cnn.com/quote/M<br>forecast/forecast.html?symb=GOOG </a>
-                            <p class="fw-bold text-dark mt-5">[5]. Cable News Network. (n.d.). TSLA. CNNMoney. </p>
+                            <p class="fw-bold text-dark mt-5">[5]. Cable News Network. (n.d.). TSLA. CNNMoney.
+                            </p>
                             <a>https://money.cnn.com/quote/<br>forecast/forecast.html?symb=TSLA </a>
                         </div>
                         <div class="col-sm-12 col-md-6">
                             <p class="fw-bold text-dark">[2]. Cable News Network. (n.d.). MSFT. CNNMoney. </p>
                             <a>https://money.cnn.com/quote/<br>forecast/forecast.html?symb=MSFT </a>
-                            <p class="fw-bold text-dark mt-5">[4]. Cable News Network. (n.d.). AMZN. CNNMoney. </p>
+                            <p class="fw-bold text-dark mt-5">[4]. Cable News Network. (n.d.). AMZN. CNNMoney.
+                            </p>
                             <a>https://money.cnn.com/quote/<br>forecast/forecast.html?symb=AMZN</a>
-                            <p class="fw-bold text-dark mt-5">[6]. Market prices definition. Nasdaq. (n.d.). </p>
+                            <p class="fw-bold text-dark mt-5">[6]. Market prices definition. Nasdaq. (n.d.).
+                            </p>
                             <a> https://www.nasdaq.com/<br>glossary/m/market-prices </a>
                         </div>
                     </div>
-                    <p class="fw-bold text-dark mt-5">[7]. Thompson, S. K. (1987). Sample Size<br> for Estimating
+                    <p class="fw-bold text-dark mt-5">[7]. Thompson, S. K. (1987). Sample Size<br> for
+                        Estimating
                         Multinomial
                         Proportions.<br> The American Statistician, 41(1), 42–46. </p>
                     <a> https://doi.org/10.2307/2684318 </a>
