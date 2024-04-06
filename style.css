@@ -313,7 +313,7 @@ body{
  /* Forth Section ends */
 
  /* 5th Section starts*/
- .Fifth_Sec{
+  .Fifth_Sec{
   margin-top: 150px;
  }
  .Fifth_Sec .card{
@@ -335,12 +335,53 @@ body{
   color: #888888;
   line-height: 35px;
  }
+@media (max-width: 768px) {
+  .Fifth_Sec .row {
+    display: flex;
+    flex-wrap: wrap-reverse; 
+  }
+
+  .Fifth_Sec .col-sm-12 {
+    order: 1; 
+    width: 100%; 
+  }
+
+  .Fifth_Sec .col-sm-6 {
+    order: 2; 
+    flex: 0 0 calc(50% - 20px); 
+    margin-bottom: 20px; 
+  }
+
+  .Fifth_Sec .card {
+    width: 10rem; 
+    height: 17rem;
+    padding: 10px 10px;
+    align-items: center;
+    border-radius: 15px;
+    text-align: center;
+    top: 350px;
+  }
+
+  .Fith_Rside {
+    position: relative; 
+    width: 100%; 
+    text-align: left; 
+    bottom: 350px;
+  }
+
+  .Fifth_Sec .Card_1,
+  .Fifth_Sec .Card_2 {
+    margin-top: 0; 
+    margin-left: 0; 
+    /* bottom: auto;  */
+  }
+}
  /* 5th Section ends */
 
  /* 6th section starts */
  .sixth_Sec {
   position: relative;
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .carousel-item h1 {
@@ -384,7 +425,7 @@ body{
  .Seventh_Sec{
   background-image: url(7SectionImages/BG.png);
   text-align: center;
-  background-size: cover;
+  background-size:cover;
   margin-top: 200px;
  }
  .Seventh_Sec h1{
@@ -397,6 +438,11 @@ body{
   font-weight: 12px;
   text-align: left;
  }
+ @media (max-width: 768px) {
+  .Seventh_Sec {
+   background-image: none;
+  }
+}
  /* 7th Section ends */
 
  /* Footer starts */
