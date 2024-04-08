@@ -303,45 +303,64 @@ body {
 }
  /* slider ends */
 
+ /* Dark Mode Slider */
+.dark-mode .gtco-testimonials .card {
+  background-color: #222222; 
+  color: #ffffff; 
+}
+.dark-mode .gtco-testimonials .card h5{
+  color: #ffffff; 
+}
  /* third section ends */
- .Forth_Sec {
+
+ /* forth section starts */
+.Forth_Sec {
   margin-top: 200px;
   background-color: white;
   padding-top: 30px;
   padding-bottom: 50px;
 }
+
 .Forth_Sec button {
   color: #888888;
   font-size: 18px;
   font-weight: 500;
 }
+
 .Forth_Sec .nav-tabs .nav-link {
   border: none;
   outline: none; 
+  background-color: transparent;
+  text-decoration: none; 
 }
+
 .Forth_Sec .nav-tabs .nav-link.active {
-    color: #FFA500; 
+  color: #FFA500; 
 }
+
 .Forth_Sec p {
   font-size: 18px;
   color: #888888;
 }
+
 .Forth_Sec hr {
   color: #888888;
 }
+
 .Forth_Icon {
   margin-top: 50px;
 }
+
 .Forth_Icon p {
   font-size: 16px;
   color: #888888;
 }
-/* Dark Mode Footer */
+
+/* Dark Mode ForthSec */
 .dark-mode .Forth_Sec {
   background-color: #1f1f1f; /* Change to your desired dark mode background color */
-  color: #ffffff; /* Change to your desired dark mode text color */
+  color: #ffffff; 
 }
-
  /* Forth Section ends */
 
  /* 5th Section starts*/
@@ -356,6 +375,10 @@ body {
   border-radius: 15px;
   text-align: center;
  }
+ .dark-mode .Fifth_Sec .card {
+  color:white;
+  background-color: #222222;
+}
  .Fith_Rside{
   text-align: right;
  }
