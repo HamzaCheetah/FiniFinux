@@ -448,7 +448,10 @@ body {
 }
 @media screen and (max-width: 768px) {
   .sixth_Sec button {
-    margin-top: 300px; 
+    margin-top: 350px; 
+  }
+  .Person3_img{
+    margin-top:120px;
   }
 }
  /* 6th Section ends */
