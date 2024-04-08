@@ -33,6 +33,12 @@ body {
 
   }
 
+  .dark-mode .navbar-toggler {
+    color: #ffffff; /* Text color */
+    background-color: #ffffff; /* Background color */
+}
+
+
   .Tab_content{
     background-color: white;
     border-radius: 15px;

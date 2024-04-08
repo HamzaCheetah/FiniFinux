@@ -28,6 +28,11 @@ body {
   color: #ffffff; /* Change to your desired color for dark mode */
 }
 
+.dark-mode .navbar-toggler {
+  color: #ffffff; /* Text color */
+  background-color: #ffffff; /* Background color */
+}
+
 .BgCircle_Img{
     background-image:URL(HeroImages/Circles.png) ;
     background-repeat: no-repeat;
@@ -443,7 +448,7 @@ body {
 }
 @media screen and (max-width: 768px) {
   .sixth_Sec button {
-    margin-top: 280px; 
+    margin-top: 300px; 
   }
 }
  /* 6th Section ends */
@@ -474,6 +479,17 @@ body {
  @media (max-width: 768px) {
   .Seventh_Sec {
    background-image: none;
+  }
+  .Seventh_Sec p{
+    text-align: center;
+  }
+}
+ @media (max-width: 768px) {
+  .dark-mode .Seventh_Sec {
+   background-image: none;
+  }
+  .Seventh_Sec p{
+    text-align: center;
   }
 }
  /* 7th Section ends */
