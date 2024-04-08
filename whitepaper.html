@@ -60,8 +60,9 @@
                                     onclick="downloadExcel()">finux a whitepaper-support</a>
                             </li>
                         </ul>
-                        <button class="btn btn-sm" type="button"><img src="HeroImages/Light mode.png" alt="light-mode"
-                                class="img-fluid"></button>
+                        <button class="btn btn-sm" id="theme-toggle" type="button">
+                            <img src="HeroImages/Light mode.png" alt="light-mode" class="img-fluid">
+                        </button>
                     </div>
                 </nav>
             </div>
@@ -241,7 +242,7 @@
                         data generated on Finulab. Hence, at the moment, the token’s main utility is to serve as: the
                         method of payment for high volume access to Finulab’s market sentiment API and WebSocket
                         services.</p>
-                    <div class="box bg-white py-3 px-3 Sec_custom">
+                    <div class="box Box_theme py-3 px-3 Sec_custom">
                         <p class="text-warning">Note on White Paper’s Status & Finux’s Utility:</p>
                         <p>at Finulab, we are committed to developing the future of finance through
                             careful
@@ -286,7 +287,7 @@
                         <li> If users require high volume access to financial sentiment data, they can instead choose to
                             use their rewards as a form of payment to access Finulab’s services</li>
                     </ol>
-                    <div class="box bg-white py-3 px-3 Sec_custom">
+                    <div class="box Box_theme py-3 px-3 Sec_custom">
                         <p>Note: as Finux tokens can only be earned through engagement with Finulab, the distribution of
                             the token to the public is not possible to predict at the moment. Distribution forecasts
                             will change on a real-time based on engagement rates. However, note that the maximum
@@ -303,7 +304,7 @@
                         the Finux token contract only supports ‘k:’ accounts, which are intended to have a single-key
                         account protocol. Consider the following keypair:
                     </p>
-                    <div class="box Table_Icon bg-white py-2 Single_Tb Sec_custom">
+                    <div class="box Table_Icon Box_theme  py-2 Single_Tb Sec_custom">
                         <table class="ms-3">
                             <tr>
                                 <td>
@@ -316,7 +317,7 @@
                             </tr>
                         </table>
                     </div>
-                    <div class="box mt-3 Table_Icon bg-white py-2 Single_Tb Sec_custom">
+                    <div class="box mt-3 Table_Icon Box_theme py-2 Single_Tb Sec_custom">
                         <table class="ms-3">
                             <tr>
                                 <td>
@@ -332,7 +333,7 @@
                     <p class="mt-3">If a user wants to create a Finux account, the token contract ensures and enforces
                         that the
                         account’s wallet address is the below across all chains: </p>
-                    <div class="box Table_Icon bg-white py-2 Single_Tb Sec_custom">
+                    <div class="box Table_Icon Box_theme py-2 Single_Tb Sec_custom">
                         <table class="ms-3">
                             <tr>
                                 <td>
@@ -374,7 +375,7 @@
                         contract operates as specified above, please feel free to visit the links specified below for
                         source code and the request keys affiliated with the contract’s deployment.
                     </p>
-                    <div class="box Table_Icon bg-white py-4 Sec_custom">
+                    <div class="box Table_Icon Box_theme py-4 Sec_custom">
                         <h5 class="text-warning ps-3">Finux Token Contract – Request Keys for Mainnet Deployment
                         </h5>
 
@@ -579,79 +580,75 @@
                         participants’ due diligence and market research process—as an example of the system, we have
                         included the table below.
                     </p>
-                    <div class="box bg-white py-4 Sec_custom">
+                    <div class="box Box_theme py-4 Sec_custom">
                         <div class="table-responsive">
-                            <table class="table table-sm  Table_Two text-center">
-                                <thead>
-                                    <tr>
-                                        <th scope="row" colspan="2" class="text-warning">as of Mar 22, 2023</th>
-                                        <th class="text-warning" colspan="3">Recommendations</th>
-                                        <th class="text-warning" colspan="3">Price Targets </th>
-                                    </tr>
-                                    <tr>
-                                        <th scope="col">Stocks</th>
-                                        <th scope="col">Polled</th>
-                                        <th scope="col">Buys</th>
-                                        <th scope="col">Holds</th>
-                                        <th scope="col">Sells</th>
-                                        <th scope="col">Low</th>
-                                        <th scope="col">Medium</th>
-                                        <th scope="col">High</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
+                            <table class="table table-sm Table_Two table-bordered rounded-table text-center">
 
-                                    <tr>
-                                        <td scope="row">AAPL[1]</td>
-                                        <td>39</td>
-                                        <td>30</td>
-                                        <td>7 </td>
-                                        <td>2</td>
-                                        <td>$116.00 </td>
-                                        <td>$173.00</td>
-                                        <td>$199.00 </td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">MSFT[2]</td>
-                                        <td>49</td>
-                                        <td>41</td>
-                                        <td>7</td>
-                                        <td>1</td>
-                                        <td>$212.00 </td>
-                                        <td>$285.00</td>
-                                        <td>$325.00 </td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">GOOG[3]</td>
-                                        <td>49</td>
-                                        <td>44</td>
-                                        <td>5</td>
-                                        <td>0</td>
-                                        <td>$89.88 </td>
-                                        <td>$125.00</td>
-                                        <td>$160.00 </td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">AMZN[4]</td>
-                                        <td>53 </td>
-                                        <td>48</td>
-                                        <td>4</td>
-                                        <td>1</td>
-                                        <td>$90.00</td>
-                                        <td>$134.50</td>
-                                        <td>$160.00 </td>
-                                    </tr>
-                                    <tr>
-                                        <td scope="row">TSLA[5] </td>
-                                        <td>46 </td>
-                                        <td>24</td>
-                                        <td>17</td>
-                                        <td>5</td>
-                                        <td>$90.00</td>
-                                        <td>$210.00</td>
-                                        <td>$320.00 </td>
-                                    </tr>
-                                </tbody>
+                                <tr>
+                                    <th scope="row" colspan="2" class="text-warning">as of Mar 22, 2023</th>
+                                    <th class="text-warning" colspan="3">Recommendations</th>
+                                    <th class="text-warning" colspan="3">Price Targets </th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">Stocks</th>
+                                    <th scope="col">Polled</th>
+                                    <th scope="col">Buys</th>
+                                    <th scope="col">Holds</th>
+                                    <th scope="col">Sells</th>
+                                    <th scope="col">Low</th>
+                                    <th scope="col">Medium</th>
+                                    <th scope="col">High</th>
+                                </tr>
+                                <tr>
+                                    <td scope="row">AAPL[1]</td>
+                                    <td>39</td>
+                                    <td>30</td>
+                                    <td>7 </td>
+                                    <td>2</td>
+                                    <td>$116.00 </td>
+                                    <td>$173.00</td>
+                                    <td>$199.00 </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">MSFT[2]</td>
+                                    <td>49</td>
+                                    <td>41</td>
+                                    <td>7</td>
+                                    <td>1</td>
+                                    <td>$212.00 </td>
+                                    <td>$285.00</td>
+                                    <td>$325.00 </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">GOOG[3]</td>
+                                    <td>49</td>
+                                    <td>44</td>
+                                    <td>5</td>
+                                    <td>0</td>
+                                    <td>$89.88 </td>
+                                    <td>$125.00</td>
+                                    <td>$160.00 </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">AMZN[4]</td>
+                                    <td>53 </td>
+                                    <td>48</td>
+                                    <td>4</td>
+                                    <td>1</td>
+                                    <td>$90.00</td>
+                                    <td>$134.50</td>
+                                    <td>$160.00 </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">TSLA[5] </td>
+                                    <td>46 </td>
+                                    <td>24</td>
+                                    <td>17</td>
+                                    <td>5</td>
+                                    <td>$90.00</td>
+                                    <td>$210.00</td>
+                                    <td>$320.00 </td>
+                                </tr>
                             </table>
                         </div>
                     </div>
@@ -675,14 +672,14 @@
                         notations. </p>
                     <div class="row">
                         <div class="col-sm-8 col-md-6">
-                            <div class="bg-white ps-2 Symbol_Txt">
+                            <div class="box Box_theme ps-2 Symbol_Txt">
                                 <p><span class="text-info">η </span> | a non-negative integer, a number in the set
                                     [0,1,2,…,∞)
                                 </p>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-9">
-                            <div class="bg-white ps-0 Symbol_Txt mt-2">
+                            <div class="box Box_theme ps-0 Symbol_Txt mt-2">
                                 <p><span class="text-info">b<sub>p</sub></span> | bid price, the price which an
                                     independent buyer
                                     is
@@ -691,7 +688,7 @@
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-9">
-                            <div class="bg-white ps-2 Symbol_Txt mt-2">
+                            <div class="box Box_theme ps-2 Symbol_Txt mt-2">
                                 <p><span class="text-info">a<sub>p</sub></span> | ask price, the price which an
                                     independent seller
                                     is
@@ -700,7 +697,7 @@
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-8">
-                            <div class="bg-white px-2 Symbol_Txt mt-2">
+                            <div class="box Box_theme px-2 Symbol_Txt mt-2">
                                 <p><span class="text-info">T ={ t<sub>0</sub>,t<sub>1</sub>,t<sub>2</sub>, …} </span> |
                                     a set of all possible future
                                     times,
@@ -709,7 +706,7 @@
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-8">
-                            <div class="bg-white px-2 Symbol_Txt mt-2">
+                            <div class="box Box_theme px-2 Symbol_Txt mt-2">
                                 <p><span class="text-info">P ={ p<sub>t0</sub>,p<sub>t1</sub>,p<sub>t2</sub>, …} </span>
                                     | a set of all stock prices
                                     correlating
@@ -740,19 +737,19 @@
                         take place between them, note that one of the following must be true: </p>
                     <div class="row">
                         <div class="col-sm-6 col-md-2">
-                            <div class="bg-white Symbol_Txt mt-2">
+                            <div class="box Box_theme Symbol_Txt mt-2">
                                 <p><span class="text-info fw-bold">1</span> | a<sub>p</sub>=b<sub>p</sub>,
                                 </p>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-2">
-                            <div class="bg-white Symbol_Txt mt-2">
+                            <div class="box Box_theme Symbol_Txt mt-2">
                                 <p><span class="text-info fw-bold">2 </span> | or a<sub>p</sub> ≤ b<sub>p</sub>.
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="box bg-white mt-3 px-3 py-3 Sec_custom">
+                    <div class="box Box_theme mt-3 px-3 py-3 Sec_custom">
                         <p>Note: we have decided to leave out the case of ap ≥ bp, because if ap = bp, then this
                             scenario simplifies to the first case above. However, if ap > bp, then no transaction takes
                             place between the buyer and seller. </p>
@@ -917,39 +914,39 @@
                     </p>
                     <div class="row">
                         <div class="col-sm-8 col-md-5">
-                            <div class="bg-white ps-2 Symbol_Txt mt-2">
+                            <div class="box Box_theme ps-2 Symbol_Txt mt-2">
                                 <p><span class="text-info">X </span> | average price target of surveyed users
                                 </p>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-10">
-                            <div class="bg-white ps-2 Symbol_Txt mt-2">
+                            <div class="box Box_theme ps-2 Symbol_Txt mt-2">
                                 <p><span class="text-info">Ta/2</span> | critical t-value, i.e., t-score associated with
                                     a confidence level of 1−with−1 degrees of freedom
                                 </p>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-7">
-                            <div class="bg-white ps-2 Symbol_Txt mt-2">
+                            <div class="box Box_theme ps-2 Symbol_Txt mt-2">
                                 <p><span class="text-info">Za/2</span> | critical z-value, i.e., z-score associated with
                                     a level of 1− ∝
                                 </p>
                             </div>
                         </div>
                         <div class="col-sm-8 col-md-5">
-                            <div class="bg-white ps-2 Symbol_Txt mt-2">
+                            <div class="box Box_theme ps-2 Symbol_Txt mt-2">
                                 <p><span class="text-info">s</span> | standard deviation across all the samples
                                 </p>
                             </div>
                         </div>
                         <div class="col-sm-8 col-md-5">
-                            <div class="bg-white ps-2 Symbol_Txt mt-2">
+                            <div class="box Box_theme ps-2 Symbol_Txt mt-2">
                                 <p><span class="text-info">n</span> | count of surveyed users (i.e., sample size)
                                 </p>
                             </div>
                         </div>
                         <div class="col-sm-6 col-md-3">
-                            <div class="bg-white ps-2 Symbol_Txt mt-2">
+                            <div class="box Box_theme ps-2 Symbol_Txt mt-2">
                                 <p><span class="text-info">d</span> | desired margin of error
                                 </p>
                             </div>
@@ -975,7 +972,7 @@
                             tabs 0-1, 1-1, 1-2, 1-3, 1-4, and 1-5.</span></p>
                     <!-- 1st table of this section starts -->
                     <div class="table-responsive">
-                        <table class="table table-sm table-bordered rounded-table text-center">
+                        <table class="table Box_theme table-sm table-bordered rounded-table text-center">
                             <thead>
                                 <tr>
                                     <td scope="row" class="text-warning">as of Mar 22, 2023</td>
@@ -1213,46 +1210,46 @@
                     </p>
                     <div class="row">
                         <div class="col-sm-8 col-md-6">
-                            <div class="bg-white Symbol_Txt mt-2">
+                            <div class="Box_theme Symbol_Txt mt-2">
                                 <p><span class="text-info">π<sub>b</sub> </span> | percentage of surveyed users that
                                     recommend buy
                                 </p>
                             </div>
                         </div>
                         <div class="col-sm-8 col-md-6">
-                            <div class="bg-white  Symbol_Txt mt-2">
+                            <div class="Box_theme  Symbol_Txt mt-2">
                                 <p><span class="text-info">π<sub>h</sub> </span> | percentage of surveyed users that
                                     recommend hold
                                 </p>
                             </div>
                         </div>
                         <div class="col-sm-8 col-md-5">
-                            <div class="bg-white Symbol_Txt mt-2">
+                            <div class="Box_theme Symbol_Txt mt-2">
                                 <p><span class="text-info">π<sub>s</sub> </span>|percentage of users that
                                     recommend sell
                                 </p>
                             </div>
                         </div>
                         <div class="col-sm-8 col-md-7">
-                            <div class="bg-white Symbol_Txt mt-2">
+                            <div class="Box_theme Symbol_Txt mt-2">
                                 <p><span class="text-info">z<sub>a/2</sub> </span>| z-value, i.e., z-score
                                     associated with confidence level of 1− ∝
                                 </p>
                             </div>
                         </div>
                         <div class="col-sm-8 col-md-9">
-                            <div class="bg-white Symbol_Txt mt-2">
+                            <div class="Box_theme Symbol_Txt mt-2">
                                 <p><span class="text-info">m </span>| an integer such that 0<𝑚≤3; note that 3 is the
                                         count of categories (buy, hold, or sell) </p>
                             </div>
                         </div>
                         <div class="col-sm-8 col-md-4">
-                            <div class="bg-white Symbol_Txt mt-2">
+                            <div class="Box_theme Symbol_Txt mt-2">
                                 <p><span class="text-info">d </span>| desired margin of error </p>
                             </div>
                         </div>
                         <div class="col-sm-8 col-md-5">
-                            <div class="bg-white Symbol_Txt mt-2">
+                            <div class="Box_theme Symbol_Txt mt-2">
                                 <p><span class="text-info">n </span>| count of surveyed users (i.e., sample size) </p>
                             </div>
                         </div>
@@ -1292,7 +1289,7 @@
                                 Finux.A, tabs 0-1 to 2-1. </p>
                         </div>
                         <div class="col-sm-12 col-md-7">
-                            <table class="table mt-5 table-sm table-bordered rounded-table text-center">
+                            <table class="table mt-5 Box_theme table-sm table-bordered rounded-table text-center">
                                 <thead>
                                     <tr>
                                         <td scope="row" class="text-warning">desired margin of error </td>
@@ -1322,9 +1319,39 @@
                                         <td>99% ; 2.576</td>
                                         <td>19,699</td>
                                     </tr>
-                                    <tr>
                                 </tbody>
                             </table>
+
+
+                            <!-- <div class="box Table_Icon Box_theme py-4 table-sm  rounded-table Sec_custom">
+                                <table class="mx-3 Table_One">
+                                    <tr>
+                                        <td scope="row" class="text-warning">desired margin of error </td>
+                                        <td class="text-warning ">confidence level of 90%</td>
+                                        <td class="text-warning">minimum required sample size </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">d</th>
+                                        <th scope="col">𝟏−a;za/2</th>
+                                        <th scope="col">n</th>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">0.03</td>
+                                        <td>90% ; 1.645 </td>
+                                        <td>1,119</td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">0.02</td>
+                                        <td>95% ; 1.960</td>
+                                        <td>3,184 </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row">0.01</td>
+                                        <td>99% ; 2.576</td>
+                                        <td>19,699</td>
+                                    </tr>
+                                </table>
+                            </div> -->
                         </div>
                     </div>
                     <p>Our objective in including the table above is to demonstrate that if we want to
@@ -1585,7 +1612,7 @@
                             </p>
                             <a>https://money.cnn.com/quote/<br>forecast/forecast.html?symb=TSLA </a>
                         </div>
-                        <div class="col-sm-12 col-md-6">
+                        <div class="col-sm-12 col-md-6 Ref_end">
                             <p class="fw-bold text-dark">[2]. Cable News Network. (n.d.). MSFT. CNNMoney. </p>
                             <a>https://money.cnn.com/quote/<br>forecast/forecast.html?symb=MSFT </a>
                             <p class="fw-bold text-dark mt-5">[4]. Cable News Network. (n.d.). AMZN. CNNMoney.
@@ -1595,19 +1622,21 @@
                             </p>
                             <a> https://www.nasdaq.com/<br>glossary/m/market-prices </a>
                         </div>
+                        <div class="col-sm-12 col-md-10 Ref_end">
+                            <p class="fw-bold text-dark mt-5 ">[7]. Thompson, S. K. (1987). Sample Size<br> for
+                                Estimating
+                                Multinomial
+                                Proportions.<br> The American Statistician, 41(1), 42–46. </p>
+                            <a> https://doi.org/10.2307/2684318 </a>
+                        </div>
                     </div>
-                    <p class="fw-bold text-dark mt-5">[7]. Thompson, S. K. (1987). Sample Size<br> for
-                        Estimating
-                        Multinomial
-                        Proportions.<br> The American Statistician, 41(1), 42–46. </p>
-                    <a> https://doi.org/10.2307/2684318 </a>
                 </div>
                 <!-- Reference ends -->
             </div>
         </div>
     </div>
     <!-- table of content ends -->
-    <div class="container-fluid">
+    <div class="container-fluid box Box_theme">
         <div class="row text-center">
             <div class="col-sm-12 col-md-12">
                 <h5><img src="HeroImages/Icon.png" alt="icon" class="img-fluid Icon_Img">© 2024 finulab llc.
@@ -1627,7 +1656,7 @@
     <script src="Iconeffects.js"></script>
     <script src="tabContent.js"></script>
     <script src="filedownload.js"></script>
-
+    <script src="./theme.js"></script>
 </body>
 
 </html>

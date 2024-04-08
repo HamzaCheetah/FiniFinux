@@ -7,6 +7,27 @@ body{
   background-color:#F4F4F4;
 
 }
+/* Light Theme */
+:root {
+  --background-color:#F4F4F4;;
+  --text-color: #000000;
+}
+
+/* Dark Theme */
+.dark-mode {
+  --background-color: #1f1f1f;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+/* Dark Mode Navigation Links */
+.dark-mode .navbar-nav .nav-link {
+  color: #ffffff; /* Change to your desired color for dark mode */
+}
+
 .BgCircle_Img{
     background-image:URL(HeroImages/Circles.png) ;
     background-repeat: no-repeat;
@@ -310,6 +331,12 @@ body{
   font-size: 16px;
   color: #888888;
 }
+/* Dark Mode Footer */
+.dark-mode .Forth_Sec {
+  background-color: #1f1f1f; /* Change to your desired dark mode background color */
+  color: #ffffff; /* Change to your desired dark mode text color */
+}
+
  /* Forth Section ends */
 
  /* 5th Section starts*/
@@ -438,6 +465,12 @@ body{
   font-weight: 12px;
   text-align: left;
  }
+ /* Dark Mode Footer */
+.dark-mode .Seventh_Sec {
+  color:white; /* Change to your desired dark mode background color */
+  background-image: url(./7SectionImages/BG\ \(1\).png);
+}
+
  @media (max-width: 768px) {
   .Seventh_Sec {
    background-image: none;
@@ -456,4 +489,10 @@ body{
   height: 50px;
   width: 50px;
  }
+ /* Dark Mode Footer */
+.dark-mode .footer_Sec {
+  background-color: #1f1f1f; /* Change to your desired dark mode background color */
+  color: #ffffff; /* Change to your desired dark mode text color */
+}
+
  /* Footer ends */

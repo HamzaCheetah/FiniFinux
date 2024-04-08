@@ -4,7 +4,25 @@
 }
 body{
     background-color:#F4F4F4;
-  
+  }
+  /* Light Theme */
+:root {
+  --background-color:#F4F4F4;;
+  --text-color: #000000;
+}
+
+/* Dark Theme */
+.dark-mode {
+  --background-color: #1f1f1f;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+  .dark-mode .navbar-nav .nav-link {
+    color: #ffffff; /* Change to your desired color for dark mode */
   }
   .Finux_Brand{
     font-size: 28px;
@@ -23,6 +41,11 @@ body{
     top: 0;
     overflow-y: auto; 
   }
+  /* Dark Mode Tab_content */
+.dark-mode .Tab_content {
+  background-color: #000000;
+  color:white; 
+}
 
   @media (max-width: 768px) {
     .Tab_content {
@@ -214,4 +237,18 @@ body{
   font-weight: bold;
   line-height: 25px;
 
+}
+
+/* Dark Mode Box Background */
+.dark-mode .Box_theme {
+  background-color: #222222;/* Change to your desired color for dark mode */
+  color: #ffffff; /* Change to your desired text color for dark mode */
+}
+
+.box{
+  background-color: #ffffff;
+}
+
+.dark-mode .Ref_end p {
+  color: #ffffff !important;
 }
